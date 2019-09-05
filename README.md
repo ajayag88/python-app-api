@@ -12,7 +12,7 @@ Deploy the app
 Test cases
 1. Write a script such that
       a. Call every API - with correct and incorrect inputs. Let each API return 200 and non 200 code
-2. Form a dictniory which should give a count of pass(200 OK) and fail(non 200 OK) for a f=given API.
+2. Form a dictionary which should give a count of pass(200 OK) and fail(non 200 OK) for a f=given API.
     Example: login is an API call, and it has 10 pass and 20 fails
       {"/login": [{"Pass": 10, "fail": 20}]}
 
