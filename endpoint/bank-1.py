@@ -12,7 +12,7 @@ login = {
 def login_pass():
     return_code = '200'
     return_message = 'Invalid Login Credentials'
-    if str(request.get_json()) == str(login):
+    if str(requests.get__jsonfile()) == login:
         return_code = '200'
         return_message = 'Login Successful'
     print(request.headers)
