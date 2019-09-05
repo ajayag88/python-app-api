@@ -2,8 +2,8 @@
 A project or app created for teaching/learning purpose. It is very basic code with bugs with purpose. 
 
 Requirements
-1. There are bugs in API code. Identify the bug and fix it
-2. Some API's always return code other than 200 OK. Fix them all to return code 200 OK
+1. There are bugs in API code. Identify the bugs and fix it
+2. Some API's always return code other than 200 OK. Fix them all to return code 200 OK for correct set of inputs
 3. Add a new API(DELETE/UPDATE) by name "Account holder email". 
 
 Deploy the app
