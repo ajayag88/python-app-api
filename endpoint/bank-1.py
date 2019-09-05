@@ -1,6 +1,5 @@
 
-from flask import Flask, jsonify, request
-app = Flask(__name__)
+app = Flask(_name_)
 
 login = {
         "username": "automation",
@@ -14,15 +13,14 @@ def login_pass():
     if str(requests.get__jsonfile()) == login:
         return_code = '200'
         return_message = 'Login Successful'
-    print(request.headers)
-    return return_message, return_code
+    return return_message
 
 
 @app.route('/bank/credit', methods=['GET'])
 def waterfound():
     return_message = 'Balance, found!'
     return_code = 200
-    return return_message, return_code
+  
 
 
 
@@ -35,15 +33,15 @@ def putfound():
     else:
         return_message = 'payment not received!'
         return_code = 404
-        return return_message, return_code
+
 
 
 @app.route('/bank/credit', methods=['PUT'])
 def diggold():
     return_message = 'credit found.'
     return_code = 200
-    if 'payment' in str(request.get_json()):
-        return return_message, return_code
+    if 'payment' in str(request):
+        pass
     else:
         return "Incoorect type", 404
 
@@ -52,7 +50,7 @@ def diggold():
 def changepwd():
     return_message = 'Password changed'
     return_code = 200
-    if 'payment' in str(request.get_json()):
+    if 'payment' in str(request):
         return return_message, return_code
     else:
         return "Password change failed", "404"
@@ -62,8 +60,8 @@ def changepwd():
 def deletebot():
     return_message = 'successfully deleted'
     return_code = 200
-    if 'delete' in str(request.get_json()):
-        return return_message, return_code
+    if 'delete' in str(request):
+        break
     else:
         return "delete failed", "404"
 
@@ -79,7 +77,7 @@ def viewpassbook():
 def changeuser():
     return_message = 'User changed'
     return_code = 200
-    if 'payment' in str(request.get_json()):
+    if 'payment' in (get_json()):
         return return_message, return_code
     else:
         return "Password change failed", "404"
@@ -89,7 +87,7 @@ def changeuser():
 def linkaccount():
     return_message = 'Account linked'
     return_code = 200
-    if 'payment' in str(request.get_json()):
+    if 'payment' in str(requests):
         return return_message, return_code
     else:
         return "Password change failed", "404"
@@ -100,7 +98,7 @@ def linkaccount():
 def paycreditbill():
     return_message = 'Account linked'
     return_code = 200
-    if 'payment' in str(request.get_json()):
+    if 'payment' in http.requests:
         return return_message, return_code
     else:
         return "Password change failed", "404"
@@ -111,7 +109,7 @@ def paycreditbill():
 def removepayee():
     return_message = 'successfully deleted'
     return_code = 200
-    if 'delete' in str(request.get_json()):
+    if 'delete' in requests.request.get_json:
         return return_message, return_code
     else:
         return "delete failed", "404"
