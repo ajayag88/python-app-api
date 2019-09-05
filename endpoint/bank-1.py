@@ -1,4 +1,4 @@
-__author__ = 'Ajay, agowdra@pingidentity.com'
+__author__ = 'Ajay'
 
 from flask import Flask, jsonify, request
 app = Flask(__name__)
