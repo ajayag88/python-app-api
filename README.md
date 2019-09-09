@@ -1,13 +1,18 @@
 # python-app-api
 A project or app created for teaching/learning purpose. It is very basic code with bugs with purpose. 
 
-Requirements
-1. There are bugs in API code endpoint/bank-1.py. Identify the bugs and fix them
-2. Some API's always return code other than 200 OK. Fix them all to return code 200 OK for correct set of inputs
-3. Add a new API(DELETE/UPDATE) by name "Account holder email" and let it return always message "Operation Not Permitted" and code "403"
+Synopsis
+Very simple and minimal flask app written in python3.7, exposes multiple APIs. These API's shall be called to achieve desired actions. 
 
-Deploy the app bank-1.py
-1. Let there be a log file showing all incoming requests and return code
+Example:
+API login(POST) can be called to login into system. A POST call for API /bank/login will return 200 OK for the right input, else 404 code. 
+
+Objectives
+1. Deploy the flask app - Use deploy.sh sctipt which is bundled.
+2. There are bugs in API code endpoint/bank-1.py. Identify the bugs and fix them
+3. Some API's always return code other than 200 OK. Fix them all to return code 200 OK for correct set of inputs
+3. Add a new API(DELETE/UPDATE) by name "Account holder email" and let it return always message "Operation Not Permitted" and code "403"
+4. Let there be a log file showing history of incoming requests and return code
 
 Test cases
 1. Write a test script by name "test-bank-api.py" such that
